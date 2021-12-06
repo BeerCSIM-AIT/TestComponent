@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TestComponents';
+  parentCount = 0;
+  addParentCount(){
+    this.parentCount += 1;
+  }
+
+  clearCount(value:any){
+    this.parentCount = value;
+  }
 }
